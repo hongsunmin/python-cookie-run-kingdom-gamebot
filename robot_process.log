@@ -1,0 +1,49 @@
+2022-08-27 23시 23분 55초: START
+/Users/a201510003/Library/Python/3.8/lib/python/site-packages/torchvision/models/_utils.py:252: UserWarning: Accessing the model URLs via the internal dictionary of the module is deprecated since 0.13 and will be removed in 0.15. Please access them via the appropriate Weights Enum instead.
+  warnings.warn(
+/Users/a201510003/Library/Python/3.8/lib/python/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/Users/a201510003/Library/Python/3.8/lib/python/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+adb version = 0029
+fwd-> None
+kill-> killall: com.android.commands.monkey: No such process
+
+=== waiting for monkey
+monkeycmd ->  :Monkey: seed=1661746706179 count=1000
+
+
+monkey active
+Traceback (most recent call last):
+  File "sample.py", line 304, in <module>
+    main()
+  File "sample.py", line 180, in main
+    if cr.sameAsImage('expireauth1.png', (910, 665, 735, 50), percent=0.9) or cr.sameAsImage('requestunkownerror.png', (890, 665, 780, 50), percent=0.9):
+  File "sample.py", line 147, in sameAsImage
+    snapshot = self.snapshot(capture).getSubImage(rect)
+  File "sample.py", line 53, in snapshot
+    self._lastSnapshot = self._device.takeSnapshot()
+  File "/Users/a201510003/Documents/workspace4python/PythonMonkey/com/android/monkeyrunner.py", line 441, in takeSnapshot
+    cap = self.adb.makecapture()
+  File "/Users/a201510003/Documents/workspace4python/PythonMonkey/adblib.py", line 264, in makecapture
+    return ADBFrameCapture(self.maketransport())
+  File "/Users/a201510003/Documents/workspace4python/PythonMonkey/adblib.py", line 255, in maketransport
+    conn.send("host:transport:%s" % self.serialnr)
+  File "/Users/a201510003/Documents/workspace4python/PythonMonkey/adblib.py", line 43, in send
+    raise Exception("ADB:%s" % resp)
+Exception: ADB:b'FAIL'
+2022-08-27 23시 26분 57초: START
+[W NNPACK.cpp:51] Could not initialize NNPACK! Reason: Unsupported hardware.
+2022-08-29 21시 01분 53초: STOP
+2022-08-29 21시 02분 17초: START
+Starting: Intent { act=android.intent.action.MAIN cmp=com.devsisters.ck/com.devsisters.plugin.OvenUnityPlayerActivity launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 } }
+Starting: Intent { act=android.intent.action.MAIN cmp=com.devsisters.ck/com.devsisters.plugin.OvenUnityPlayerActivity launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 } }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.intent.action.MAIN cmp=com.devsisters.ck/com.devsisters.plugin.OvenUnityPlayerActivity launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 } }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.intent.action.MAIN cmp=com.devsisters.ck/com.devsisters.plugin.OvenUnityPlayerActivity launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 } }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.intent.action.MAIN cmp=com.devsisters.ck/com.devsisters.plugin.OvenUnityPlayerActivity launchParam=MultiScreenLaunchParams { mDisplayId=0 mFlags=0 } }
+Warning: Activity not started, its current task has been brought to the front
+[W NNPACK.cpp:51] Could not initialize NNPACK! Reason: Unsupported hardware.
+2022-08-30 08시 24분 52초: STOP
